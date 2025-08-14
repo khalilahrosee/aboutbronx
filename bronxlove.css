@@ -1,0 +1,46 @@
+body{
+  background-color: lightgoldenrodyellow;
+}
+h1{
+  text-align: center;
+  color: rgb(208, 141, 65);
+}
+p{
+  text-align: center;
+  color: rgb(208, 141, 65);
+}
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fdcea2
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: rgb(208, 141, 65);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #fffdfbea;
+}
+.active {
+  background-color: #04AA6D;
+}
+.rise-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: riseUp 1.5s ease-out forwards;
+}
+
+@keyframes riseUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
